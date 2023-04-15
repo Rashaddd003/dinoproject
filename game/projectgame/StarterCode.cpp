@@ -9,6 +9,8 @@ using namespace std;
 #include <cmath>
 
 
+
+
 RenderWindow window(VideoMode(1200, 800), "Dino Fight");
 
 void play();
@@ -29,21 +31,34 @@ int main()
 }
 
 
+
 void homescreen() {
+
     Text playy;
     Font font;
-
-
-
-
-    /////////////////////////score display
+    Texture background;
+    background.loadFromFile("assets/background.png");
+    Sprite back;
+    back.setTexture(background);
+    back.scale(.8, .7);
+    double backwidth = background.getSize().x * .8;
+    /////////////////////////// to play
     font.loadFromFile("assets/Arial.ttf");
     playy.setFont(font);
     playy.setStyle(Text::Bold);
     playy.setCharacterSize(50);
-    playy.setFillColor(Color::White);
-    playy.setString("press f to play");
-    playy.setPosition(19, 4);
+    playy.setFillColor(Color::Black);
+    playy.setString("Press F to Play");
+    playy.setPosition(520, 350);
+    bool mute = 0;
+
+    //loading backgorund sound
+    SoundBuffer backs;
+    backs.loadFromFile("assets/background.wav");
+    Sound backsound;
+    backsound.setBuffer(backs);
+    backsound.play();
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -54,10 +69,21 @@ void homescreen() {
         }
 
         window.clear();
+
         if (Keyboard::isKeyPressed(Keyboard::F)) {
+            backsound.stop();
             play();
         }
-       
+
+        
+        if (Keyboard::isKeyPressed(Keyboard::M) && !mute) {
+            backsound.setVolume(0);
+            mute = 1;
+        } else if (Keyboard::isKeyPressed(Keyboard::K) && mute) {
+            backsound.setVolume(100);
+            mute = 0;
+        }
+        window.draw(back);
         window.draw(playy);
         window.display();
 
@@ -201,6 +227,21 @@ void play() {
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+        }
+
+
+
+
+
+
+
+
+
+
+        if (Keyboard::isKeyPressed(Keyboard::Space) && dino.getPosition().y > 635 && !Keyboard::isKeyPressed(Keyboard::Down)) {
+            velocity.y = -sqrt(2.0f * 981.0f * jumpheight);
+            m = 2;
+            ups.play();
         }
 
 
@@ -369,3 +410,79 @@ void play() {
     }
 
 }
+
+
+
+
+
+
+//
+//#include <iostream>
+//#include <SFML/Graphics.hpp>
+//#include <SFML/System.hpp>
+//#include <SFML/Window.hpp>
+//#include <SFML/Audio.hpp>
+//#include <SFML/Network.hpp>
+//using namespace sf;
+//using namespace std;
+//RenderWindow window(VideoMode(1200, 800), "SFML Works!", Style::Close | Style::Titlebar);
+//void BackkgrounndColors()
+//{
+//    Vector2f rec1pos = Vector2f(0, 0);
+//    RectangleShape rec1(Vector2f(1200.f, 200.f));
+//    rec1.setFillColor(Color::Cyan);
+//    rec1.setPosition(rec1pos);
+//    window.draw(rec1);
+//}
+//
+//void BackgroundWords()
+//{
+//    Font font;
+//    if (!font.loadFromFile("assets/Arial.ttf"))
+//        throw("COULD NOT LOAD FONT");
+//    Text text;
+//    text.setFont(font);
+//    text.setCharacterSize(50);
+//    text.setFillColor(Color::Red);
+//    text.setStyle(Text::Regular);
+//    text.setString(" Dino Runner ");
+//    text.setPosition(Vector2f(450, 300));
+//    window.draw(text);
+//}
+//
+//
+//void Output()
+//{
+//    window.setFramerateLimit(60);
+//    SoundBuffer soundBuffer;
+//    Sound sound;
+//    if (!soundBuffer.loadFromFile("assets/background.wav"))
+//    {
+//        throw("COULD NOT LOAD Audio");
+//    }
+//    sound.setBuffer(soundBuffer);
+//    sound.play();
+//    while (window.isOpen())
+//    {
+//        sf::Event event;
+//        while (window.pollEvent(event))
+//        {
+//
+//            if (event.type == sf::Event::Closed)
+//                window.close();
+//        }
+//        window.clear();
+//        BackkgrounndColors();
+//        BackgroundWords();
+//        window.display();
+//
+//    }
+//}
+//
+///// main function 
+//int main()
+//{
+//
+//    Output();
+//}
+

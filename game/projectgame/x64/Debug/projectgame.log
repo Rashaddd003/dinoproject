@@ -1,19 +1,20 @@
 ﻿  StarterCode.cpp
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(19,30): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(73,22): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(83,25): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(98,22): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(101,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(121,24): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(122,25): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(123,25): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(134,27): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(216,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(226,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(227,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(315,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(329,76): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(329,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(358,33): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-R:\ZC\2. First Year\Second semester\202 project\game\projectgame\StarterCode.cpp(105,10): warning C4101: 'canjump': unreferenced local variable
-  projectgame.vcxproj -> R:\ZC\2. First Year\Second semester\202 project\game\x64\Debug\projectgame.exe
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(21,30): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(43,22): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(99,22): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(109,25): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(124,22): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(127,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(147,24): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(148,25): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(149,25): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(160,27): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(257,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(267,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(268,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(356,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(370,76): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(370,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(399,33): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+R:\ZC\2. First Year\Second semester\202 project\project game\game\projectgame\StarterCode.cpp(131,10): warning C4101: 'canjump': unreferenced local variable
+  projectgame.vcxproj -> R:\ZC\2. First Year\Second semester\202 project\project game\game\x64\Debug\projectgame.exe
